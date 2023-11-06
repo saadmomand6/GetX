@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/screen_one.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -79,6 +80,19 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
           ),
+          const SizedBox(
+            height: 30,
+          ),
+          Center(
+            child: TextButton(
+                onPressed: () {
+                  Get.toNamed('/ScreenOne', arguments: [
+                    'screen one argument',
+        ]);
+                  //Get.to(const ScreenOne(heading: 'Screen One',));
+                },
+                child: const Text('this button is for GetX navigation')),
+          )
         ],
       ),
       floatingActionButton: FloatingActionButton(
