@@ -19,6 +19,13 @@ class _ScreenOneState extends State<ScreenOne> {
       body: Column(
         children: [
           const Text('screen one'),
+          Container(
+            height: Get.height * .1,
+            color: Colors.amber,
+            child: const  Center(
+              child: Text('data'),
+            ),
+          ),
           Center(
             child: TextButton(
                 onPressed: () {
