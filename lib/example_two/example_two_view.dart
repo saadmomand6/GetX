@@ -15,7 +15,7 @@ class _ExampleTwoViewState extends State<ExampleTwoView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GetX Counter View'),
+        title: const Text('GetX Example Two View'),
       ),
       body: Column(
         children: [
